@@ -1,0 +1,1079 @@
+[
+    {
+        "id": "fbd618a4878f82b0",
+        "type": "tab",
+        "label": "流程1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a467936899d2d85e",
+        "type": "tab",
+        "label": "流程3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "35c4cb4d50d48af0",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.242.42",
+        "port": "1883",
+        "clientid": "Axc5Lg8SOgIdGiUFMTAHMQU",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "63399f9c23576c26",
+        "type": "ui_tab",
+        "name": "再生能源空汙監測系統",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false,
+        "info": "<style>\r\n position:fixed;\r\n width: 100%;\r\n height: 90%; \r\n top: 40px;\r\n</style>"
+    },
+    {
+        "id": "76429a9f943792a7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#212a39",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#212a39",
+                    "value": "#212a39",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0f2027",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#0f2027",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#212a39",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#4c84ff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#1f2735",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#77c6cc",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "Arial Black,Arial Black,Gadget,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "再生能源空汙監測系統",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 8,
+                "gy": 12,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 5
+            }
+        }
+    },
+    {
+        "id": "40f38013903171d6",
+        "type": "ui_group",
+        "name": "感測器",
+        "tab": "63399f9c23576c26",
+        "order": 3,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b655b0e420cd46ff",
+        "type": "ngrokauth",
+        "name": ""
+    },
+    {
+        "id": "28264cad61d71038",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/",
+        "instancehash": "padxmoz0nhfdtbpoq2ki31385oxshvo4el29tfvy2p13r51sfcpk0c4gzk430xmh",
+        "server": "nodered02.remote-red.com",
+        "region": "de"
+    },
+    {
+        "id": "b73c767570e72cad",
+        "type": "ui_group",
+        "name": "太陽能板總電壓",
+        "tab": "63399f9c23576c26",
+        "order": 4,
+        "disp": false,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "204b9c4eb3058b14",
+        "type": "ui_group",
+        "name": "碳排放",
+        "tab": "63399f9c23576c26",
+        "order": 1,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "19dd880f4af0cd93",
+        "type": "ui_group",
+        "name": "系統耗電量",
+        "tab": "63399f9c23576c26",
+        "order": 5,
+        "disp": false,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "020a3bfde5f6b3c3",
+        "type": "ui_group",
+        "name": "太陽能供電狀態",
+        "tab": "63399f9c23576c26",
+        "order": 2,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1aa66b87.2386cc",
+        "type": "ui_group",
+        "name": "^ Page Menu (three bars)",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "15",
+        "collapse": false
+    },
+    {
+        "id": "1a17c2d2178515e9",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "40f38013903171d6",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5aabae1782720baa",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "40f38013903171d6",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4ec62084dfc9acaf",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "40f38013903171d6",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e7d0ac7994d1520b",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "40f38013903171d6",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0f8877ea9ce6dea0",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "b73c767570e72cad",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c6dec11d9896cc66",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "b73c767570e72cad",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f159cbe4268681f6",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "b73c767570e72cad",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fa9f16e42b686d72",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "b73c767570e72cad",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f279010d78bfcf98",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "19dd880f4af0cd93",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3ace7d750f98829b",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "19dd880f4af0cd93",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ba048e60aab263b5",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "19dd880f4af0cd93",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2bf2c202cb1e48ee",
+        "type": "ui_spacer",
+        "z": "fbd618a4878f82b0",
+        "name": "spacer",
+        "group": "19dd880f4af0cd93",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9ca56421e89f510b",
+        "type": "mqtt in",
+        "z": "fbd618a4878f82b0",
+        "name": "",
+        "topic": "test_topic",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35c4cb4d50d48af0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 440,
+        "wires": [
+            [
+                "a74091b46e844aad",
+                "115f9b6129c12d5f"
+            ]
+        ]
+    },
+    {
+        "id": "a74091b46e844aad",
+        "type": "debug",
+        "z": "fbd618a4878f82b0",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "81d0efb27120850d",
+        "type": "debug",
+        "z": "fbd618a4878f82b0",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "115f9b6129c12d5f",
+        "type": "function",
+        "z": "fbd618a4878f82b0",
+        "name": "function 2",
+        "func": "var message = '[{' + msg.payload + '}]';\nvar message = message.replace(\"NaN\", \"-1\");\nvar message = message.replace(\"NaN\", \"-1\");\nmsg.payload=message;\nreturn msg;\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 540,
+        "wires": [
+            [
+                "81d0efb27120850d",
+                "bcd5b2445ad7ca1a"
+            ]
+        ]
+    },
+    {
+        "id": "0ccc5074135d9ff1",
+        "type": "ui_gauge",
+        "z": "fbd618a4878f82b0",
+        "name": "溫度",
+        "group": "40f38013903171d6",
+        "order": 2,
+        "width": 7,
+        "height": 4,
+        "gtype": "gage",
+        "title": "溫度",
+        "label": "度",
+        "format": "{{msg.payload[0].tem}}",
+        "min": "18",
+        "max": "38",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "33",
+        "className": "tem",
+        "x": 810,
+        "y": 520,
+        "wires": [],
+        "info": "# "
+    },
+    {
+        "id": "bb0b9b092287c6c3",
+        "type": "ui_gauge",
+        "z": "fbd618a4878f82b0",
+        "name": "濕度",
+        "group": "40f38013903171d6",
+        "order": 3,
+        "width": 7,
+        "height": 4,
+        "gtype": "wave",
+        "title": "濕度",
+        "label": "%",
+        "format": "{{msg.payload[0].hum}}",
+        "min": "-1",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 810,
+        "y": 560,
+        "wires": [],
+        "info": "# "
+    },
+    {
+        "id": "25a032618d2a5996",
+        "type": "ui_gauge",
+        "z": "fbd618a4878f82b0",
+        "name": "",
+        "group": "40f38013903171d6",
+        "order": 9,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "pm2.5",
+        "label": "μg/m3",
+        "format": "{{msg.payload[0].pm}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "35",
+        "seg2": "150",
+        "className": "",
+        "x": 810,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "e20adbfab336b090",
+        "type": "ui_gauge",
+        "z": "fbd618a4878f82b0",
+        "name": "",
+        "group": "40f38013903171d6",
+        "order": 11,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "可見光",
+        "label": "nm",
+        "format": "{{msg.payload[0].vis}}",
+        "min": 0,
+        "max": "2000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "666",
+        "seg2": "1332",
+        "className": "",
+        "x": 810,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "69f295746a2f93d7",
+        "type": "ui_gauge",
+        "z": "fbd618a4878f82b0",
+        "name": "",
+        "group": "40f38013903171d6",
+        "order": 10,
+        "width": 5,
+        "height": 4,
+        "gtype": "gage",
+        "title": "紅外線",
+        "label": "nm",
+        "format": "{{msg.payload[0].ir}}",
+        "min": "7000",
+        "max": "1000000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1400",
+        "seg2": "3000000",
+        "className": "",
+        "x": 810,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "b32a4d772126b31e",
+        "type": "ui_gauge",
+        "z": "fbd618a4878f82b0",
+        "name": "",
+        "group": "40f38013903171d6",
+        "order": 12,
+        "width": 5,
+        "height": 4,
+        "gtype": "gage",
+        "title": "紫外線",
+        "label": "",
+        "format": "{{msg.payload[0].uv}}",
+        "min": 0,
+        "max": "12",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "4",
+        "seg2": "8",
+        "className": "",
+        "x": 810,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "308fa22352068725",
+        "type": "ui_gauge",
+        "z": "fbd618a4878f82b0",
+        "name": "",
+        "group": "40f38013903171d6",
+        "order": 5,
+        "width": 7,
+        "height": 4,
+        "gtype": "gage",
+        "title": "二氧化碳",
+        "label": "ppm",
+        "format": "{{msg.payload[0].co2}}",
+        "min": 0,
+        "max": "15000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "850",
+        "seg2": "2500",
+        "className": "",
+        "x": 820,
+        "y": 600,
+        "wires": [],
+        "info": "# "
+    },
+    {
+        "id": "3c48dc38e8d4d816",
+        "type": "ui_template",
+        "z": "fbd618a4878f82b0",
+        "group": "40f38013903171d6",
+        "name": "",
+        "order": 1,
+        "width": 22,
+        "height": 1,
+        "format": "<style>\n    body{\n        font-size:20px;\n    }\n    ui-card-panel {\n        border-radius: 12px ;\n    }\n    body.nr-dashboard-theme md-toolbar .md-toolbar-tools {\n        color: #FFFFFF;\n        font-weight: bold;\n    }\n\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 80,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bcd5b2445ad7ca1a",
+        "type": "json",
+        "z": "fbd618a4878f82b0",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 530,
+        "y": 540,
+        "wires": [
+            [
+                "0ccc5074135d9ff1",
+                "bb0b9b092287c6c3",
+                "25a032618d2a5996",
+                "e20adbfab336b090",
+                "69f295746a2f93d7",
+                "308fa22352068725",
+                "f5e9d9647b421b64",
+                "f52018890b9ba94c",
+                "e5953a94d52d4fbc",
+                "3e86df4718a72da4",
+                "dacf0e9e2f53e1d6",
+                "b32a4d772126b31e",
+                "8e0aadeb3a94a767"
+            ]
+        ]
+    },
+    {
+        "id": "e2ffa05036bf0770",
+        "type": "ui_chart",
+        "z": "fbd618a4878f82b0",
+        "name": "系統耗電率",
+        "group": "19dd880f4af0cd93",
+        "order": 2,
+        "width": 10,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Wait a seconds!",
+        "dot": true,
+        "ymin": "170",
+        "ymax": "250",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1050,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5e9d9647b421b64",
+        "type": "function",
+        "z": "fbd618a4878f82b0",
+        "name": "function 3",
+        "func": "msg.payload = msg.payload[0].p;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 440,
+        "wires": [
+            [
+                "e2ffa05036bf0770",
+                "2fa9b25806b55623"
+            ]
+        ]
+    },
+    {
+        "id": "338001648447560a",
+        "type": "ui_chart",
+        "z": "fbd618a4878f82b0",
+        "name": "太陽能板總電壓",
+        "group": "b73c767570e72cad",
+        "order": 2,
+        "width": 10,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Wait a seconds!",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "10",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1060,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ed29f500490eb5b",
+        "type": "debug",
+        "z": "fbd618a4878f82b0",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "2fa9b25806b55623",
+        "type": "debug",
+        "z": "fbd618a4878f82b0",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "f52018890b9ba94c",
+        "type": "ui_template",
+        "z": "fbd618a4878f82b0",
+        "group": "19dd880f4af0cd93",
+        "name": "系統耗電率",
+        "order": 1,
+        "width": 11,
+        "height": 1,
+        "format": "<span class=\"\" >\n    <h3 style= \"background:#eee\">系統耗電功率：{{msg.payload[0].p}}&nbspmw</h3>\n    \n</span>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 830,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5953a94d52d4fbc",
+        "type": "ui_template",
+        "z": "fbd618a4878f82b0",
+        "group": "b73c767570e72cad",
+        "name": "太陽能板總電壓",
+        "order": 1,
+        "width": 11,
+        "height": 1,
+        "format": "<span class=\"\" >\n    <h3 style= \"background:#eee\">太陽能板總電壓：{{msg.payload[0].vol}}&nbspv</h3>\n    \n</span>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 840,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e86df4718a72da4",
+        "type": "function",
+        "z": "fbd618a4878f82b0",
+        "name": "function 5",
+        "func": "msg.payload = 0.509/180 * msg.payload[0].p;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 300,
+        "wires": [
+            [
+                "57f55ee51b434637"
+            ]
+        ]
+    },
+    {
+        "id": "57f55ee51b434637",
+        "type": "debug",
+        "z": "fbd618a4878f82b0",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "dacf0e9e2f53e1d6",
+        "type": "ui_template",
+        "z": "fbd618a4878f82b0",
+        "group": "204b9c4eb3058b14",
+        "name": "碳排放",
+        "order": 1,
+        "width": 11,
+        "height": 1,
+        "format": "<span class=\"C\" >\n    <h2 style= \"background:#eee\">{{msg.payload[0].vol}}</h2>\n    <h3>&nbsp g/hr</h3>\n    \n</span>\n\n<style>\n    .C {\n        border: 2px solid #333;\n        border-radius: 10px;\n        font-size: 20px;\n\n        color: #CE0000;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        width: 500px;\n        height: 43px;\n        background-color: #eee;\n\n        transform: translate(10%, 0%);\n    }\n\n    h3 h5 {\n        display: inline;\n    }\n\n    h5 {\n        color: #CE0000;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 810,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "631a73b5b9b8a220",
+        "type": "ui_template",
+        "z": "fbd618a4878f82b0",
+        "group": "",
+        "name": "button",
+        "order": 0,
+        "width": "1",
+        "height": "1",
+        "format": "<head>\n    <input type=\"button\" name=\"register\">\n</head>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 70,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e0aadeb3a94a767",
+        "type": "function",
+        "z": "fbd618a4878f82b0",
+        "name": "function 4",
+        "func": "msg.payload = msg.payload[0].vol;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 380,
+        "wires": [
+            [
+                "338001648447560a",
+                "3ed29f500490eb5b"
+            ]
+        ]
+    },
+    {
+        "id": "302d4c5d972eb280",
+        "type": "exec",
+        "z": "a467936899d2d85e",
+        "command": "C:\\Users\\Ting\\inference.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "76647be61018ef81",
+                "372648edb9f7d82a"
+            ],
+            [
+                "57baaa0c957d6428"
+            ],
+            [
+                "ecb4a0bb0997fec9"
+            ]
+        ]
+    },
+    {
+        "id": "6e845ed437c64d48",
+        "type": "inject",
+        "z": "a467936899d2d85e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "callpy",
+        "payloadType": "str",
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "302d4c5d972eb280"
+            ]
+        ]
+    },
+    {
+        "id": "76647be61018ef81",
+        "type": "debug",
+        "z": "a467936899d2d85e",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ecb4a0bb0997fec9",
+        "type": "debug",
+        "z": "a467936899d2d85e",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "57baaa0c957d6428",
+        "type": "debug",
+        "z": "a467936899d2d85e",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "372648edb9f7d82a",
+        "type": "ui_template",
+        "z": "a467936899d2d85e",
+        "group": "020a3bfde5f6b3c3",
+        "name": "",
+        "order": 1,
+        "width": 11,
+        "height": 1,
+        "format": "<span class=\"py\" >\n    <h3>{{msg.payload}}</h3>    \n</span>\n\n<style>\n    .py {\n\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        font-size: 20px;\n\n        color: #CE0000;\n\n\n    }\n\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    }
+]

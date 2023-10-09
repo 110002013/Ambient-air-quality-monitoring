@@ -54,7 +54,7 @@ $\Rightarrow$ Node - RED  結果於網頁平台呈現
 <img width="898" alt="image" src="https://github.com/110002013/Ambient-air-quality-monitoring/assets/93826901/9c5ea3cf-9823-49af-9a84-3cb536a3d1d9">
 
 #### 歷史感測資料
-<img width="149" alt="image" src="https://github.com/110002013/Ambient-air-quality-monitoring/assets/93826901/6a42de30-21d2-48a1-8fc4-e48b47d8e968">  
+<img width="926" alt="image" src="https://github.com/110002013/Ambient-air-quality-monitoring/assets/93826901/f4f23b6e-16e9-48b8-89e4-6ba5daf4043c">
 
 
 

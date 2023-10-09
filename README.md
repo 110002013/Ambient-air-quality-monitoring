@@ -46,9 +46,12 @@ $\Rightarrow$ Node - RED  結果於網頁平台呈現
 # 結論
 研究結果顯示透過 SMOTE 進行資料前處理,並使用Polynomial SVM進行分類之分類性能較好。
 
+# 資料庫
+![image](https://github.com/110002013/Ambient-air-quality-monitoring/assets/93826901/c0af0f6d-fdd8-47da-bb86-c7d899761bfa)
+
 # 網頁呈現
 #### 即時感測資料
-<img width="154" alt="image" src="https://github.com/110002013/Ambient-air-quality-monitoring/assets/93826901/10e86f75-020e-4201-88e5-430ec7362a95">  
+<img width="898" alt="image" src="https://github.com/110002013/Ambient-air-quality-monitoring/assets/93826901/9c5ea3cf-9823-49af-9a84-3cb536a3d1d9">
 
 #### 歷史感測資料
 <img width="149" alt="image" src="https://github.com/110002013/Ambient-air-quality-monitoring/assets/93826901/6a42de30-21d2-48a1-8fc4-e48b47d8e968">  
